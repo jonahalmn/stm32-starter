@@ -1,0 +1,1 @@
+void setup_timer(TIMx_registers TIMER, uint32_t channel, uint32_t frequency, float duty_cycle);
