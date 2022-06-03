@@ -33,7 +33,7 @@ void setup_timer_DMA(struct TIMx_registers *TIMER, uint32_t channel, uint32_t fr
   //TIMER->CCER  = 0x0010; /* Channel 2 output to pin PB9 */
   TIMER->CNT   = 0x0000;
   TIMER->PSC   = 0;
-  TIMER->ARR   = 1000;
+  TIMER->ARR   = 0xfff;
   //TIMER->CCR2  = (frequency*100000) * duty_cycle; /* rapport cyclique 50% */
    //TIMER->PSC   = get_APB1TIMCLK() / TIM_Base;
  // TIMER->ARR   = TIM_Base/frequency;
